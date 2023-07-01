@@ -14,7 +14,7 @@ const Contact =()=> {
 
 		e.preventDefault();
 		console.log(name, email, subject, message);
-		let result = await fetch('http://localhost:8000/contact', {
+		let result = await fetch(`${REACT_APP_API}/contact`, {
 		  method: "post",
 		  body: JSON.stringify({ name, email, subject, message }),
 		  headers: { 'Content-Type': 'application/json' },
