@@ -3,6 +3,7 @@ import projec1 from "../img/project1.png";
 import projec2 from "../img/project2.png";
 import projec3 from "../img/project3.png";
 import projec4 from "../img/project4.png";
+import pro5 from "../img/project5.png";
 
 function Work() {
   const project = [
@@ -27,35 +28,11 @@ function Work() {
       github: "https://github.com/heyNazim/MY-Food",
       img: projec4,
     },
-    // {
-    //   url: "https://heyshivanshu.netlify.app/api/home",
-    //   github: "https://github.com/Shivanshu-Upadhyay/MyPortfolio",
-    //   img: projec5,
-    // },
-    // {
-    //   url: "https://fileshareonline.netlify.app/",
-    //   github: "https://github.com/Shivanshu-Upadhyay/FileShare.git",
-    //   img: projec5,
-    // },
-    // {
-    //   url: "https://shivanshuresume.netlify.app/",
-    //   github: "https://github.com/Shivanshu-Upadhyay/Resume",
-    //   img: projec1,
-    // },
-
-    // {
-    //   url: "https://heyshareme.netlify.app/login",
-    //   github: "https://github.com/Shivanshu-Upadhyay/ShremeFrontend",
-    //   img: projec3,
-    // },
-
-    
-
-    // {
-    //   url: "https://shivanshuproject1.netlify.app/",
-    //   github: "https://github.com/Shivanshu-Upadhyay/Futureminds-.git",
-    //   img: projec9,
-    // },
+    {
+      url: "https://nazim-e-commerce-app.netlify.app/",
+      github: "https://github.com/heyNazim?tab=repositories",
+      img: pro5,
+    },
   ];
 
   return (
