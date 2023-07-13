@@ -6,6 +6,6 @@ const userSchema = new mongoose.Schema({
     email:String,
     subject:String,
     message:String
-});
+},{timestamps:true});
 
 export default mongoose.model('portfolio',userSchema)
