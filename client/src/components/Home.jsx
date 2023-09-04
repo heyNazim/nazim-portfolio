@@ -48,7 +48,7 @@ function Home() {
               ></lottie-player>
             </Link>
              <Link
-              to="#"
+              to="https://www.linkedin.com/in/nazim-saifi-04b124238/"
               className="linkedin"
               target="_blank"
               rel="noreferrer"
