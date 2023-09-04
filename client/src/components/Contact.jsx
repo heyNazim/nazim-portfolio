@@ -21,13 +21,15 @@ const Contact =()=> {
 	
 		});
 
-		result = await result.json()
+	  result = await result.json()
 		console.log(result)
 		localStorage.setItem("users", JSON.stringify(result));
 		navigate("/page/home");
 
-	  }
-	  const notify = () => toast("Data Submit Successfully!");
+		if(result){
+		toast.success("Data Submit Successfully!");
+		}
+	}
 
   return (
     <div class="contact1" id='contact' data-aos="fade-up">
@@ -68,7 +70,7 @@ const Contact =()=> {
 				</div>
 
 				<div class="container-contact1-form-btn">
-					<button onClick={notify} type='submit'  class="contact1-form-btn">
+					<button type='submit'  class="contact1-form-btn">
 						<span>
 							Send Email
 							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>

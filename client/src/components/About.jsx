@@ -1,5 +1,5 @@
 import React from "react";
-import myimg from "../img/myimg.jpeg";
+import Nazim from '../img/Nazim.jpg'
 import ProgressBar from "@ramonak/react-progress-bar";
 import { useSpring, animated } from "react-spring";
 import resume from '../img/Nazim-Resume.pdf'
@@ -50,7 +50,7 @@ function About() {
             onMouseLeave={() => set({ xys: [0, 0, 1] })}
             style={{ transform: props.xys.to(trans) }}
           >
-            <img src={myimg} className="img-fluid borderNew" alt="not found" />
+            <img src={Nazim} className="img-fluid borderNew" alt="not found" />
           </animated.div>
           <div className="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Full Stack Web Developer &amp; Freelancer</h3>
