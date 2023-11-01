@@ -18,7 +18,7 @@ const Contact = () => {
       message,
     });
     if (result.data.success === true) {
-      toast.error(`Dear ${result.data.message}`);
+      toast.success(`Dear ${result.data.message}`);
     }else {
 		toast.error(`${result.data.message}`);
     }
@@ -106,7 +106,7 @@ const Contact = () => {
           <div class="container-contact1-form-btn">
             <button type="submit" class="contact1-form-btn">
               <span>
-                Send Email
+                Submit 
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
               </span>
               <ToastContainer />
