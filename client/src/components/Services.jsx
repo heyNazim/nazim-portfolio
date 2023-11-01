@@ -21,30 +21,26 @@ function Services() {
   },
 ]
   return (
-    <section id="chefs" class="chefs section-bg">
-      <div class="container" data-aos="fade-up">
+    <section id="chefs" className="chefs section-bg">
+      <div className="container" data-aos="fade-up">
 
-      <div className="section-title">
+      <div classNameName="section-title">
           <h2>Services</h2>
         </div>
 
-        <div class="row gy-4">
-        {data.map((item)=>  <div class="col-lg-4 col-md-6 d-flex align-items-stretch"  key={item.name}>
-            <div class="chef-member">
-              <div class="member-img">
-                <img src={item.img} class="img-fluid" alt="" height="500px"/>
+        <div className="row gy-4">
+        {data.map((item)=>  <div className="col-lg-4 col-md-6 d-flex align-items-stretch"  key={item.name}>
+            <div className="chef-member">
+              <div className="member-img">
+                <img src={item.img} className="img-fluid" alt="" height="500px"/>
                
               </div>
-              <div class="member-info">
+              <div className="member-info">
                 <h4>{item.name}</h4>
                 <p>{item.content}</p>
               </div>
             </div>
           </div>)}
-        
-
-         
-
         </div>
 
       </div>

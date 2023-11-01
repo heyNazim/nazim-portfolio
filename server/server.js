@@ -28,7 +28,7 @@ if(!name || !email || !phone || !message){
 // Exiting user
 const exixtingemail = await userModel.findOne({email})
 if(exixtingemail){
-    return res.status(401).send({
+    return res.status(200).send({
         success:false,
         message:`Dear ${exixtingemail.name} Your data already submitted`
     })
