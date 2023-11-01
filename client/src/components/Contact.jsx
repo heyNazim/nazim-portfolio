@@ -18,11 +18,9 @@ const Contact = () => {
       message,
     });
     if (result.data.success === true) {
-      toast.success(`Dear ${result.data.message}`);
-    } else if (result.data.success === false) {
-      toast.success(`${result.data.message}`);
-    } else {
-      toast.success("Try again");
+      toast.error(`Dear ${result.data.message}`);
+    }else {
+		toast.error(`${result.data.message}`);
     }
   };
 
