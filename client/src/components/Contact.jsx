@@ -1,33 +1,27 @@
 import React from 'react'
 import { useState } from 'react'
-import {useNavigate} from 'react-router-dom'
+import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Contact =()=> {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
-	const [subject, setSubject] = useState('');
+	const [phone, setPhone] = useState('');
 	const [message, setMessage] = useState('');
-	const navigate = useNavigate();
 
 	const collectData = async (e) => {
 
 		e.preventDefault();
-		console.log(name, email, subject, message);
-		let result = await fetch(`${process.env.REACT_APP_API}/contact`, {
-		  method: "post",
-		  body: JSON.stringify({ name, email, subject, message }),
-		  headers: { 'Content-Type': 'application/json' },
-	
-		});
+		console.log(name, email, phone, message);
+		let result = await axios.post(process.env.REACT_APP_API, {name,email,phone,message});
 
-	  result = await result.json()
-		console.log(result)
-		localStorage.setItem("users", JSON.stringify(result));
-		navigate("/page/home");
 
-		if(result){
-		toast.success("Data Submit Successfully!");
+		if(result.data.success ===  true){
+		toast.success(`Dear ${result.data.message}`);
+	}else if(result.data.success === false){
+			toast.success(`${result.data.message}`);
+		}else{
+toast.success("Try again")
 		}
 	}
 
@@ -60,7 +54,7 @@ const Contact =()=> {
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Subject is required">
-					<input value={subject} onChange={(e)=>setSubject(e.target.value)} class="input1" type="text" name="subject"  placeholder="Subject" required/>
+					<input value={phone} onChange={(e)=>setPhone(e.target.value)} class="input1" type="number" name="phone"  placeholder="Phone no." required/>
 					<span class="shadow-input1"></span>
 				</div>
 
