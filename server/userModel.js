@@ -8,4 +8,4 @@ const userSchema = new mongoose.Schema({
     message:String
 },{timestamps:true});
 
-export default mongoose.model('portfolio',userSchema)
+export default mongoose.model('contactus',userSchema)
