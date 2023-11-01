@@ -21,7 +21,7 @@ const Contact =()=> {
 	}else if(result.data.success === false){
 			toast.success(`${result.data.message}`);
 		}else{
-toast.success("Try again")
+		toast.success("Try again")
 		}
 	}
 
