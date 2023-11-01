@@ -13,7 +13,7 @@ const Contact =()=> {
 
 		e.preventDefault();
 		console.log(name, email, phone, message);
-		let result = await axios.post(`http://localhost:8000/contact`, {name,email,phone,message});
+		let result = await axios.post(process.env.REACT_APP_API, {name,email,phone,message});
 
 
 		if(result.data.success ===  true){
