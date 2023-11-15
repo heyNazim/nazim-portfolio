@@ -68,6 +68,20 @@ try {
         }
       });
     
+      // twilio
+      const accountSid = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+const authToken = 'your_auth_token';
+
+const client = require('twilio')(accountSid, authToken);
+
+client.messages
+  .create({
+    body: 'Hello from twilio-node',
+    to: '+919582598805', // Text your number
+    from: '+919643685727', // From a valid Twilio number
+  })
+  .then((message) => console.log(message.sid));
+  
     
 } catch (error) {
     res.status(500).send({
