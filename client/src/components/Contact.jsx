@@ -11,7 +11,7 @@ const Contact = () => {
 
   const collectData = async (e) => {
     e.preventDefault();
-    let result = await axios.post(`http://localhost:8000/api/contact`, {
+    let result = await axios.post(`${process.env.REACT_APP_API}/api/contact`, {
       name,
       email,
       phone,

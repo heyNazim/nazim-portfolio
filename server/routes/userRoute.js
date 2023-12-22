@@ -1,9 +1,11 @@
 import express from 'express'
-import { usercontroller } from '../controllers/userController.js';
+import { getAllusers, usercontroller } from '../controllers/userController.js';
 
 const router = express.Router();
 
-router.post('/contact', usercontroller)
+router.post('/contact', usercontroller);
+
+router.get('/all-users', getAllusers);
 
 export default router;
 

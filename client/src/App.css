@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+table, th, td {
+  border:1px solid black !important;
+  padding: 10px;
+}
 #header {
   position: fixed;
   top: 0;

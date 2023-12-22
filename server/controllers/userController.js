@@ -96,4 +96,25 @@ return client.messages
 }
 
 
+
+// get all users api
+export const getAllusers = async(req,res)=>{
+  try {
+    const alluser = await userModel.find({})
+    if(alluser){
+      res.status(200).send({
+        success:true,
+        message:"All User Get Successfully",
+        alluser
+      })
+    }
+  } catch (error) {
+    console.log(error)
+    res.status(500).send({
+      success:false,
+      message:"something went wrong",
+      error
+    })
+  }
+}
    
