@@ -1,4 +1,6 @@
-import userModel from "../models/userModel.js";
+import nodemailer from 'nodemailer';
+import twilio from 'twilio'
+import userModel from '../userModel.js';
 
 
 export const usercontroller = async(req,res)=>{
@@ -69,20 +71,20 @@ try {
       });
     
       // twilio
-      const accountSid = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
-const authToken = 'your_auth_token';
+      const accountSid = `${process.env.ACCOUNT_SID}`;
+const authToken = `${process.env.AUTH_TOKEN}`;
 
-const client = require('twilio')(accountSid, authToken);
+const client = new twilio(accountSid, authToken);
 
-client.messages
+return client.messages
   .create({
     body: 'Hello from twilio-node',
-    to: '+919582598805', // Text your number
-    from: '+919643685727', // From a valid Twilio number
+    to: `+91 ${user.phone}`, // Text your number
+    from: `${process.env.TWILIO_PHONE_NUMBER}`, // From a valid Twilio number
   })
   .then((message) => console.log(message.sid));
   
-    
+  
 } catch (error) {
     res.status(500).send({
         success:false,
