@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { ChakraProvider } from '@chakra-ui/react'
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
@@ -16,6 +18,7 @@ function App() {
     AOS.init();
   }, []);
   return (
+    <ChakraProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/page" element={<SideBar />}>
@@ -30,6 +33,8 @@ function App() {
           <Route path="*" element={<Navigate to="page/home" />} />
         </Routes>
       </BrowserRouter>
+    </ChakraProvider>
+
   );
 }
 

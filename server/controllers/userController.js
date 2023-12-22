@@ -118,3 +118,22 @@ export const getAllusers = async(req,res)=>{
   }
 }
    
+
+// Delete sinfle uer
+export const deleteUserController =async(req,res)=>{
+  try {
+    const result  = await userModel.findByIdAndDelete({_id: req.params.id})
+      res.status(200).send({
+        success:true,
+        message:`${result.name} Delete successfully`
+      })
+    
+  } catch (error) {
+    console.log(error)
+    res.status(500).send({
+      success:false,
+      message:"Something went wrong",
+      error
+    })
+  }
+}
