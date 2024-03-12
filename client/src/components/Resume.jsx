@@ -13,7 +13,7 @@ function Resume() {
             <h3 className="resume-title">Sumary</h3>
             <div className="resume-item pb-0">
               <h4>Nazim Saifi</h4>
-              <p><em>Full Stack Web Developer and Freelancer with 1+ Years of experience</em></p>
+              <p><em>Full Stack Web Developer  with 1+ Years of experience</em></p>
               <ul>
                 <li>Noida</li>
                 <li><a href="tel:+919643685727" style={{ textDecoration: "none", color: "inherit" }}>+91 9643685727</a></li>
@@ -47,6 +47,17 @@ function Resume() {
                 
               </ul>
             </div> */}
+
+<div className="resume-item">
+              <h4>Frontend Developer</h4>
+              <h5>Jan 2022 -  Jun 2022</h5>
+              <p><em>Delberto PVT.LTD</em></p>
+              <ul>
+                <li>My Role was Frontend  Developer and my responsibility are to develop Website  Using HTML, CSS, JavaScript, Jquery and Bootstrap. andalso make responsive layout and here I done some work on figma</li>
+
+              </ul>
+            </div>
+            
             <div className="resume-item">
               <h4>FullStack Developer(MERN)</h4>
               <h5>DEC 2022 - MAY 2023</h5>
@@ -67,15 +78,7 @@ function Resume() {
 
               </ul>
             </div>
-            <div className="resume-item">
-              <h4>Frontend Developer</h4>
-              <h5>Jan 2022 -  Jun 2022</h5>
-              <p><em>Delberto PVT.LTD</em></p>
-              <ul>
-                <li>My Role was Frontend  Developer and my responsibility are to develop Website  Using HTML, CSS, JavaScript, Jquery and Bootstrap. andalso make responsive layout and here I done some work on figma</li>
-
-              </ul>
-            </div>
+        
           </div>
         </div>
 
