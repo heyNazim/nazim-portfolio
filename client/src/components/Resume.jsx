@@ -13,11 +13,11 @@ function Resume() {
             <h3 className="resume-title">Sumary</h3>
             <div className="resume-item pb-0">
               <h4>Nazim Saifi</h4>
-              <p><em>Full Stack Web Developer and Freelancer with 8+ months of experience</em></p>
+              <p><em>Full Stack Web Developer and Freelancer with 1+ Years of experience</em></p>
               <ul>
                 <li>Noida</li>
-                <li><a href="tel:+917880811002" style={{ textDecoration: "none", color: "inherit" }}>+91 9643685727</a></li>
-                <li><a href="mailto:heyshivanshu01@gmail.com" style={{ textDecoration: "none", color: "inherit" }}>nazim.saifi@gmail.com</a></li>
+                <li><a href="tel:+919643685727" style={{ textDecoration: "none", color: "inherit" }}>+91 9643685727</a></li>
+                <li><a href="mailto:nazim.saifi1908@gmail.com" style={{ textDecoration: "none", color: "inherit" }}>nazim.saifi1908@gmail.com</a></li>
               </ul>
             </div>
 
