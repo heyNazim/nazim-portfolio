@@ -1,12 +1,30 @@
 import React from "react";
-import projec1 from "../img/project1.png";
+import projec0 from "../img/neelkanth.png";
+import projec1 from "../img/skilloceans.png";
 import projec2 from "../img/project2.png";
 import projec3 from "../img/project3.png";
+import projec5 from "../img/Srinagar.png";
+import projec6 from "../img/BMC.png";
 import projec4 from "../img/project4.png";
 import pro5 from "../img/project5.png";
 
 function Work() {
   const project = [
+    {
+      url: "https://www.neelkanthhospital.com",
+      github: "#",
+      img: projec0,
+    },
+    {
+      url: "https://neelkanth-shrinagar.netlify.app/",
+      github: "#",
+      img: projec5,
+    },
+    {
+      url: "https://brandmachaniccomm.netlify.app/",
+      github: "#",
+      img: projec6,
+    },
     {
       url: "https://skilloceans.com",
       github: "https://github.com/heyNazim/skilloceans",

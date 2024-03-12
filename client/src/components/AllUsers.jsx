@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { Button } from "@chakra-ui/react";
+import { Button, Table, TableContainer, Tbody, Td, Th, Thead, Tr } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 const AllUsers = () => {
@@ -19,9 +19,13 @@ const AllUsers = () => {
     }
   };
 
+  
   const mydelete = async (id) => {
-    await axios.delete(`${process.env.REACT_APP_API}/api/remove/${id}`);
+    const tata =   await axios.delete(`${process.env.REACT_APP_API}/api/remove/${id}`);
+  if(tata.data.success === true){
+    alert(`${tata.name} delete successfully`)
     window.location.reload();
+  }
   };
   return (
     <>
@@ -30,33 +34,34 @@ const AllUsers = () => {
           <div className="section-title">
             <h2>All Users</h2>
           </div>
-          <table borser={1}>
-            <tr>
-              <th>S.no</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Phone</th>
-              <th>Message</th>
-              <th>Delete</th>
-            </tr>
-            {alluser.map((value, index) => (
-              <tr>
-                <td key={index}>{index + 1}</td>
-                <td>{value.name}</td>
-                <td>{value.email}</td>
-                <td>{value.phone}</td>
-                <td>{value.message}</td>
-                <Button
-                  onClick={() => mydelete(value._id)}
-                  className="btn btn-danger"
-                  colorScheme="teal"
-                  size="sm"
-                >
-                  Delete
-                </Button>
-              </tr>
-            ))}
-          </table>
+          <TableContainer>
+  <Table size='sm'  variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>S.no</Th>
+        <Th>Name</Th>
+        <Th>Email</Th>
+        <Th>Phone</Th>
+        <Th>Message</Th>
+        <Th>Delete</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+      {alluser.map((value,index)=>(
+      <Tr>
+        <Td key={index}>{index+1}</Td>
+        <Td>{value.name}</Td>
+        <Td>{value.email}</Td>
+        <Td>{value.phone}</Td>
+        <Td>{value.message}</Td>
+        <Td><Button  onClick={() => mydelete(value._id)}  className="btn btn-danger"  colorScheme='red'  size="sm"> Delete</Button></Td>
+      </Tr>
+      ))}
+  
+    </Tbody>
+  </Table>
+</TableContainer>
+   
         </div>
       </section>
     </>

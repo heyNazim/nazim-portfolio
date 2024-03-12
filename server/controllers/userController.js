@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 import twilio from 'twilio'
-import userModel from '../userModel.js';
+import userModel from '../schema/userModel.js';
 
 
 export const usercontroller = async(req,res)=>{

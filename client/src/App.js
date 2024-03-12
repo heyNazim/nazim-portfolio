@@ -19,7 +19,7 @@ function App() {
   }, []);
   return (
     <ChakraProvider>
-      <BrowserRouter>
+    <BrowserRouter>
         <Routes>
           <Route path="/page" element={<SideBar />}>
             <Route path="home" element={<Home />} />
