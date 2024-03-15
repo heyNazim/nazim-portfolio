@@ -16,7 +16,7 @@ function Work() {
       img: projec0,
     },
     {
-      url: "https://neelkanth-shrinagar.netlify.app/",
+      url: "https://www.neelkanthivfsrinagar.com/",
       github: "#",
       img: projec5,
     },
