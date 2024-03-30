@@ -16,12 +16,12 @@ function Work() {
       img: projec0,
     },
     {
-      url: "https://www.neelkanthivfsrinagar.com/",
+      url: "https://www.neelkanthivfsrinagar.com",
       github: "#",
       img: projec5,
     },
     {
-      url: "https://brandmachaniccomm.netlify.app/",
+      url: "https://brandmechanic.in",
       github: "#",
       img: projec6,
     },
