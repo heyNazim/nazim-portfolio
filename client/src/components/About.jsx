@@ -53,7 +53,7 @@ function About() {
             <img src={Nazim} className="img-fluid borderNew" alt="not found" />
           </animated.div>
           <div className="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Full Stack Web Developer &amp; Freelancer</h3>
+            <h3>Full Stack Developer </h3>
             <p className="fst-italic">
 
               My name is Nazim Saifi. I am a Full Stack Web Developer and Web Designer, as well as an Open Source enthusiast and a Computer Science student from India. I am passionate about working on new and exciting technologies emerging today. With significant experience as a MERN Stack Developer in startups and as a UI/UX Designer, I have been a core member of development teams and have made substantial contributions to open source projects.
