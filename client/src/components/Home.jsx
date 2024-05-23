@@ -10,7 +10,7 @@ function Home() {
         data-aos-delay="200"
       >
         <div className="col-6">
-          <h1>Nazim Sfi</h1>
+          <h1>Nazim Saifi</h1>
           <p>
             I'm{" "}
             <span>

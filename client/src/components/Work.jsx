@@ -7,9 +7,27 @@ import projec5 from "../img/Srinagar.png";
 import projec6 from "../img/BMC.png";
 import projec4 from "../img/project4.png";
 import pro5 from "../img/project5.png";
+import flamingoimage from "../img/flamingo.png";
+import abstractimage from "../img/abstract.png";
+import herbalshadesimage from "../img/herbalshades.png";
 
 function Work() {
   const project = [
+    {
+      url: "https://herbalshades.com",
+      github: "#",
+      img: herbalshadesimage,
+    },
+    {
+      url: "https://flamingobookcompany.com",
+      github: "#",
+      img: flamingoimage,
+    },
+    {
+      url: "https://abstractbookspublishing.com",
+      github: "#",
+      img: abstractimage,
+    },
     {
       url: "https://www.neelkanthhospital.com",
       github: "#",
@@ -31,23 +49,23 @@ function Work() {
       img: projec1,
     },
     {
-      url: "https://www.theecsindia.com/",
+      url: "https://www.theecsindia.com",
       github: "https://github.com/heyNazim/ECS-ENVIRONMENTAL",
       img: projec2,
     },
     {
-      url: "https://heysptechnoweld.netlify.app/",
+      url: "https://heysptechnoweld.netlify.app",
       github: "https://github.com/heyNazim/SP_TECHNO_WELD",
       img: projec3,
     },
  
     {
-      url: "https://n-food.netlify.app/",
+      url: "https://n-food.netlify.app",
       github: "https://github.com/heyNazim/MY-Food",
       img: projec4,
     },
     {
-      url: "https://nazim-e-commerce-app.netlify.app/",
+      url: "https://nazim-e-commerce-app.netlify.app",
       github: "https://github.com/heyNazim?tab=repositories",
       img: pro5,
     },
