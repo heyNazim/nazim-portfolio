@@ -48,15 +48,6 @@ function Resume() {
               </ul>
             </div> */}
 
-<div className="resume-item">
-              <h4>Frontend Developer</h4>
-              <h5>Jan 2022 -  Jun 2022</h5>
-              <p><em>Delberto PVT.LTD</em></p>
-              <ul>
-                <li>My Role was Frontend  Developer and my responsibility are to develop Website  Using HTML, CSS, JavaScript, Jquery and Bootstrap. andalso make responsive layout and here I done some work on figma</li>
-
-              </ul>
-            </div>
             
             <div className="resume-item">
               <h4>FullStack Developer(MERN)</h4>
@@ -79,6 +70,18 @@ function Resume() {
               </ul>
             </div>
         
+<div className="resume-item">
+              <h4>Full Stack Developer</h4>
+              <h5>Jan 2024 -  current</h5>
+              <p><em>Brand Mechanic Communications</em></p>
+              <ul>
+<li>Created visually appealing and user-friendly website designs.</li>
+<li>Developed responsive and functional websites from concept to deployment.</li>
+<li>Ensured cross-browser compatibility and mobile responsiveness.</li>
+<li>Implemented best practices for SEO and web performance optimization.</li>
+<li>Utilized various web development tools and technologies to achieve project goals.</li>
+              </ul>
+            </div>
           </div>
         </div>
 
