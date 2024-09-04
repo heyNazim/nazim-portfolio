@@ -10,9 +10,15 @@ import pro5 from "../img/project5.png";
 import flamingoimage from "../img/flamingo.png";
 import abstractimage from "../img/abstract.png";
 import herbalshadesimage from "../img/herbalshades.png";
+import herbalshadesimage2 from "../img/herbal2.png";
 
 function Work() {
   const project = [
+    {
+      url: "https://buildherbalshades.netlify.app/",
+      github: "https://github.com/heyNazim/Herbalshades-ReduxToolkit",
+      img: herbalshadesimage2,
+    },
     {
       url: "https://herbalshades.com",
       github: "#",
