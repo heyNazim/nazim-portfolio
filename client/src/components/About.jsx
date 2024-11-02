@@ -2,7 +2,7 @@ import React from "react";
 import Nazim from '../img/Nazim.jpg'
 import ProgressBar from "@ramonak/react-progress-bar";
 import { useSpring, animated } from "react-spring";
-import resume from '../img/Nazim-Resume.pdf'
+import resume from '../img/Nazim_Resume.pdf'
 function About() {
   const calc = (x, y) => [
     -(y - window.innerHeight / 2) / 20,

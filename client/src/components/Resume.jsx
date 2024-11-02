@@ -72,7 +72,7 @@ function Resume() {
         
 <div className="resume-item">
               <h4>Full Stack Developer</h4>
-              <h5>Jan 2024 -  current</h5>
+              <h5>July 2023 -  July 2024</h5>
               <p><em>Brand Mechanic Communications</em></p>
               <ul>
 <li>Created visually appealing and user-friendly website designs.</li>
