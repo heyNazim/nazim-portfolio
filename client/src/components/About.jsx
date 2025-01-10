@@ -2,7 +2,7 @@ import React from "react";
 import Nazim from '../img/Nazim.jpg'
 import ProgressBar from "@ramonak/react-progress-bar";
 import { useSpring, animated } from "react-spring";
-import resume from '../img/Nazim_Resume.pdf'
+import resume from '../img/Nazim_Cv.pdf'
 function About() {
   const calc = (x, y) => [
     -(y - window.innerHeight / 2) / 20,
@@ -15,8 +15,6 @@ function About() {
     xys: [0, 0, 1],
     config: { mass: 5, tension: 300, friction: 60 },
   }));
-
-
 
   const skills = [
     { name: "HTML", val: "90" },
@@ -54,15 +52,14 @@ function About() {
           </animated.div>
           <div className="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Full Stack Developer </h3>
+            
             <p className="fst-italic">
-
               My name is Nazim Saifi. I am a Full Stack Web Developer , as well as an Open Source enthusiast and a Computer Science student from India. I am passionate about working on new and exciting technologies emerging today. With significant experience as a MERN Stack Developer in startups and as a UI/UX Designer, I have been a core member of development teams and have made substantial contributions to open source projects.
             </p>
+
             <p className="fst-italic">
               My skills include React.js, Next.js, Node.js, Express.js, MongoDB, MySQL, JavaScript, Material UI, Bootstrap, Tailwind.css, HTML, and CSS.
-
             </p>
-
 
             <div className="row">
               <div className="col-lg-6">
