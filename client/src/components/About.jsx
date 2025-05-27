@@ -1,5 +1,5 @@
 import React from "react";
-import Nazim from '../img/Nazim.jpg'
+import Nazim from '../img/Nazim.png'
 import ProgressBar from "@ramonak/react-progress-bar";
 import { useSpring, animated } from "react-spring";
 import resume from '../img/Nazim_Cv.pdf'

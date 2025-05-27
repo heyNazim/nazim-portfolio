@@ -2,23 +2,29 @@ import React from "react";
 import projec0 from "../img/neelkanth.png";
 import projec1 from "../img/skilloceans.png";
 import projec2 from "../img/project2.png";
-import projec3 from "../img/project3.png";
+// import projec3 from "../img/project3.png";
 import projec5 from "../img/Srinagar.png";
 import projec6 from "../img/BMC.png";
-import projec4 from "../img/project4.png";
-import pro5 from "../img/project5.png";
+// import projec4 from "../img/project4.png";
+import projec7 from "../img/project6.png";
+// import pro5 from "../img/project5.png";
 import flamingoimage from "../img/flamingo.png";
 import abstractimage from "../img/abstract.png";
 import herbalshadesimage from "../img/herbalshades.png";
-import herbalshadesimage2 from "../img/herbal2.png";
+// import herbalshadesimage2 from "../img/herbal2.png";
 
 function Work() {
   const project = [
     {
-      url: "https://buildherbalshades.netlify.app/",
-      github: "https://github.com/heyNazim/Herbalshades-ReduxToolkit",
-      img: herbalshadesimage2,
+      url: "https://dialexportmart.com/",
+      github: "#",
+      img: projec7  ,
     },
+    // {
+    //   url: "https://buildherbalshades.netlify.app/",
+    //   github: "https://github.com/heyNazim/Herbalshades-ReduxToolkit",
+    //   img: herbalshadesimage2,
+    // },
     {
       url: "https://herbalshades.com",
       github: "#",
@@ -59,22 +65,22 @@ function Work() {
       github: "https://github.com/heyNazim/ECS-ENVIRONMENTAL",
       img: projec2,
     },
-    {
-      url: "https://heysptechnoweld.netlify.app",
-      github: "https://github.com/heyNazim/SP_TECHNO_WELD",
-      img: projec3,
-    },
+    // {
+    //   url: "https://heysptechnoweld.netlify.app",
+    //   github: "https://github.com/heyNazim/SP_TECHNO_WELD",
+    //   img: projec3,
+    // },
  
-    {
-      url: "https://n-food.netlify.app",
-      github: "https://github.com/heyNazim/MY-Food",
-      img: projec4,
-    },
-    {
-      url: "https://nazim-e-commerce-app.netlify.app",
-      github: "https://github.com/heyNazim?tab=repositories",
-      img: pro5,
-    },
+    // {
+    //   url: "https://n-food.netlify.app",
+    //   github: "https://github.com/heyNazim/MY-Food",
+    //   img: projec4,
+    // },
+    // {
+    //   url: "https://nazim-e-commerce-app.netlify.app",
+    //   github: "https://github.com/heyNazim?tab=repositories",
+    //   img: pro5,
+    // },
   ];
 
   return (
